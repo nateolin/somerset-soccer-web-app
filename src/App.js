@@ -10,8 +10,7 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link>
+        <Link to="/about">About Us</Link> | <Link to="/faq">FAQ</Link>
       </nav>
     </div>
   );
