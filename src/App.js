@@ -10,7 +10,11 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/about">About Us</Link> | <Link to="/faq">FAQ</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/faq">FAQ</Link>
+        <Link to="/rec">Rec</Link>
+        <Link to="/competitive">Competitive</Link>
+        <Link to="/register">Register</Link>
       </nav>
       <Outlet />
     </div>
