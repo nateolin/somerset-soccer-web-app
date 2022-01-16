@@ -1,20 +1,34 @@
 import { Outlet, Link } from "react-router-dom";
 
+const headingLinks = {
+  padding: "1rem",
+};
+
 export default function App() {
   return (
-    <div>
-      <h1>Somerset Soccer Club</h1>
+    <div style={{ display: "flex", alignItems: "baseline" }}>
+      <h1 style={{ justifyContent: "flex-start" }}>Somerset Soccer Club</h1>
       <nav
         style={{
-          borderBottom: "solid 1px",
           paddingBottom: "1rem",
+          justifyContent: "flex-end",
         }}
       >
-        <Link to="/about">About Us</Link>
-        <Link to="/faq">FAQ</Link>
-        <Link to="/rec">Rec</Link>
-        <Link to="/competitive">Competitive</Link>
-        <Link to="/register">Register</Link>
+        <Link style={{ padding: "1rem" }} to="/about">
+          About Us
+        </Link>
+        <Link style={{ padding: "1rem" }} to="/faq">
+          FAQ
+        </Link>
+        <Link style={{ padding: "1rem" }} to="/rec">
+          Rec
+        </Link>
+        <Link style={{ padding: "1rem" }} to="/competitive">
+          Competitive
+        </Link>
+        <Link style={{ padding: "1rem" }} to="/register">
+          Register
+        </Link>
       </nav>
       <Outlet />
     </div>
