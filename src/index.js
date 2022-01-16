@@ -8,9 +8,18 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="about" element={<About />} />
-      <Route path="faq" element={<FAQ />} />
+      <Route path="/" element={<App />}>
+        <Route path="about" element={<About />} />
+        <Route path="faq" element={<FAQ />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Route>
     </Routes>
   </BrowserRouter>,
   rootElement
