@@ -1,26 +1,13 @@
-import { Link } from "react-router-dom";
-import { getInvoices } from "../data";
+import styled from "styled-components";
 
-export default function Invoices() {
-  let invoices = getInvoices();
+const MainContent = styled.div`
+  display: flex;
+`;
+
+export default function About() {
   return (
-    <div style={{ display: "flex" }}>
-      <nav
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
-        }}
-      >
-        {invoices.map((invoice) => (
-          <Link
-            style={{ display: "block", margin: "1rem 0" }}
-            to={`/invoices/${invoice.number}`}
-            key={invoice.number}
-          >
-            {invoice.name}
-          </Link>
-        ))}
-      </nav>
-    </div>
+    <MainContent>
+      <h2>About</h2>
+    </MainContent>
   );
 }
