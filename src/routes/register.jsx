@@ -1,7 +1,14 @@
+import styled from "styled-components";
+
+const MainContent = styled.div`
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+`;
+
 export default function Register() {
   return (
-    <main style={{ padding: "1rem 0" }}>
+    <MainContent>
       <h2>Register</h2>
-    </main>
+    </MainContent>
   );
 }

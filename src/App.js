@@ -5,21 +5,18 @@ import styled from "styled-components";
 const DaddyContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
 `;
 
 const MommyContainer = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
 `;
 
 const LinkContainer = styled.div`
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
-
-// const LinkContainer = styled.div`
-//   padding: 1rem;
-// `;
 
 const App = () => {
   return (
@@ -28,23 +25,23 @@ const App = () => {
         {/* <h1 style={{ justifyContent: "flex-start" }}>Somerset Soccer Club</h1> */}
         <img src={sscLogo} alt="Somerset Soccer Logo"></img>
         <MommyContainer>
-          <Link to="/about">
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <LinkContainer> About Us </LinkContainer>
           </Link>
 
-          <Link to="/rec">
+          <Link to="/rec" style={{ textDecoration: "none" }}>
             <LinkContainer>Rec Soccer</LinkContainer>
           </Link>
 
-          <Link to="/competitive">
+          <Link to="/competitive" style={{ textDecoration: "none" }}>
             <LinkContainer>Competitive Soccer</LinkContainer>
           </Link>
 
-          <Link to="/faq">
+          <Link to="/faq" style={{ textDecoration: "none" }}>
             <LinkContainer>FAQ's</LinkContainer>
           </Link>
 
-          <Link to="/register">
+          <Link to="/register" style={{ textDecoration: "none" }}>
             <LinkContainer>Register</LinkContainer>
           </Link>
         </MommyContainer>
