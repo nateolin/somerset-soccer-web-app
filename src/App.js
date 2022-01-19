@@ -2,11 +2,19 @@ import { Link, Outlet } from "react-router-dom";
 import sscLogo from "./assets/sscLogo.jpg";
 import styled from "styled-components";
 
+const BigPappiContainer = styled.div`
+  padding-left: 4rem;
+  padding-right: 4rem;
+`;
+
 const DaddyContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Open Sans", sans-serif;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
 `;
 
 const MommyContainer = styled.div`
@@ -50,7 +58,9 @@ const App = () => {
           </Link>
         </MommyContainer>
       </DaddyContainer>
-      <Outlet />
+      <BigPappiContainer>
+        <Outlet />
+      </BigPappiContainer>
     </div>
   );
 };
