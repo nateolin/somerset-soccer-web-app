@@ -23,7 +23,11 @@ const App = () => {
     <div>
       <DaddyContainer>
         {/* <h1 style={{ justifyContent: "flex-start" }}>Somerset Soccer Club</h1> */}
-        <img src={sscLogo} alt="Somerset Soccer Logo"></img>
+        <img
+          src={sscLogo}
+          alt="Somerset Soccer Logo"
+          style={{ height: "114px", width: "221.25px" }}
+        ></img>
         <MommyContainer>
           <Link to="/about" style={{ textDecoration: "none" }}>
             <LinkContainer> About Us </LinkContainer>
