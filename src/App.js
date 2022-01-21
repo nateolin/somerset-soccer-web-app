@@ -2,15 +2,11 @@ import { Link, Outlet } from "react-router-dom";
 import sscLogo from "./assets/sscLogo.jpg";
 import styled from "styled-components";
 
-const BigPappiContainer = styled.div`
-  padding-left: 4rem;
-  padding-right: 4rem;
-`;
-
 const DaddyContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: auto;
+  gap: 5rem;
   font-family: "Open Sans", sans-serif;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -19,6 +15,13 @@ const DaddyContainer = styled.div`
 
 const MommyContainer = styled.div`
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
+const BigPappiContainer = styled.div`
+  padding-left: 4rem;
+  padding-right: 4rem;
 `;
 
 const LinkContainer = styled.div`
@@ -34,7 +37,7 @@ const App = () => {
         <img
           src={sscLogo}
           alt="Somerset Soccer Logo"
-          style={{ height: "114px", width: "221.25px" }}
+          style={{ height: "108.8px", width: "130.4px" }}
         ></img>
         <MommyContainer>
           <Link to="/about" style={{ textDecoration: "none" }}>
