@@ -1,19 +1,17 @@
-import { Outlet } from "react-router-dom";
+import HeaderComponent from "./header-component";
 import styled from "styled-components";
-import HeaderComponent from "./components/header-component";
 
 const GrandpaContainer = styled.div`
   font-family: "Open Sans", sans-serif;
 `;
 
-const App = () => {
+const TheBigBossContainer = ({ children }) => {
   return (
     <GrandpaContainer>
       <HeaderComponent />
-
-      <Outlet />
+      {children}
     </GrandpaContainer>
   );
 };
 
-export default App;
+export default TheBigBossContainer;

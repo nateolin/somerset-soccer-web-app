@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
+import MainContent from "./components/main-content";
 import About from "./routes/about";
 import Competitive from "./routes/competitive";
 import FAQ from "./routes/faq";
@@ -13,6 +14,7 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
+        <Route path="/" element={<MainContent />} />
         <Route path="about" element={<About />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="rec" element={<Rec />} />
