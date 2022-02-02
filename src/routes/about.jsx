@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
-const MainContent = styled.div`
-  display: flex;
-  font-family: "Open Sans", sans-serif;
-`;
+const MainContent = styled.div``;
 
 export default function About() {
   return (
     <MainContent>
-      <h2>About</h2>
+      <h1 class="text-3xl font-bold underline">Hello about!</h1>
     </MainContent>
   );
 }
