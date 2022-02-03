@@ -1,8 +1,0 @@
-.backgroundImage {
-  min-height: 40em;
-  background: linear-gradient(rgba(0, 53, 87, 0.5), rgba(0, 13, 87, 0.219)),
-    url("../assets/background-pic-three-soccer-balls-3000.jpg") no-repeat center
-      50%;
-  height: 100%;
-  object-fit: contain;
-}

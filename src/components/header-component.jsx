@@ -1,70 +1,43 @@
 import { Link } from "react-router-dom";
 import sscLogo from "../assets/sscLogo.jpg";
-import styled from "styled-components";
-
-const DaddyContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  gap: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-`;
-
-const MommyContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 3.5em;
-`;
-
-const LinkContainer = styled.button`
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.4em;
-  height: 100%;
-  border: none;
-`;
 
 const HeaderComponent = () => {
   return (
     <div>
-      <DaddyContainer>
+      <div>
         <Link to="/">
           <img
             src={sscLogo}
             alt="Somerset Soccer Logo"
-            style={{ height: "108.8px", width: "130.4px" }}
+            style={{ height: "54.4px", width: "81.5px" }} //reg height and width is 108.8 x 163
           ></img>
         </Link>
         <h1>Somerset Soccer Club</h1>
-      </DaddyContainer>
-      <MommyContainer>
+      </div>
+      <div>
         <Link to="/about" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer> About Us </LinkContainer>
+          About Us
         </Link>
 
         <Link to="/rec" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>Rec Soccer</LinkContainer>
+          Rec Soccer
         </Link>
 
         <Link
           to="/competitive"
           style={{ textDecoration: "none", height: "100%" }}
         >
-          <LinkContainer>Competitive Soccer</LinkContainer>
+          Competitive Soccer
         </Link>
 
         <Link to="/faq" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>FAQ's</LinkContainer>
+          FAQ's
         </Link>
 
         <Link to="/register" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>Register</LinkContainer>
+          Register
         </Link>
-      </MommyContainer>
+      </div>
     </div>
   );
 };
