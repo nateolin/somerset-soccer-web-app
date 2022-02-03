@@ -17,7 +17,6 @@ const MommyContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #ff2626;
   height: 3.5em;
 `;
 
@@ -26,7 +25,6 @@ const LinkContainer = styled.button`
   padding-right: 1rem;
   font-size: 1.4em;
   height: 100%;
-  background-color: #ff2626;
   border: none;
 `;
 
