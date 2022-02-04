@@ -3,18 +3,18 @@ import sscLogo from "../assets/sscLogo.jpg";
 
 const HeaderComponent = () => {
   return (
-    <div>
-      <div>
+    <div className="flex flex-row flex-wrap py-6 items-center">
+      <div className="inline-flex items-center basis-3/4">
         <Link to="/">
           <img
             src={sscLogo}
             alt="Somerset Soccer Logo"
-            style={{ height: "54.4px", width: "81.5px" }} //reg height and width is 108.8 x 163
+            // style={{ height: "54.4px", width: "81.5px" }} //reg height and width is 108.8 x 163
           ></img>
         </Link>
-        <h1>Somerset Soccer Club</h1>
+        <strong>Somerset Soccer Club</strong>
       </div>
-      <div>
+      <div className="basis-1/4">
         <Link to="/about" style={{ textDecoration: "none", height: "100%" }}>
           About Us
         </Link>

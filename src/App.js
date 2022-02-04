@@ -3,7 +3,7 @@ import HeaderComponent from "./components/header-component";
 
 const App = () => {
   return (
-    <div>
+    <div className="md:container md:mx-auto">
       <HeaderComponent />
       <Outlet />
     </div>
