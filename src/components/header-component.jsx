@@ -4,7 +4,7 @@ import sscLogo from "../assets/sscLogo.jpg";
 const HeaderComponent = () => {
   return (
     <div className="flex flex-row flex-wrap py-6 items-center">
-      <div className="inline-flex items-center basis-3/4">
+      <div className="flex items-center basis-1/2">
         <Link to="/">
           <img
             src={sscLogo}
@@ -14,29 +14,18 @@ const HeaderComponent = () => {
         </Link>
         <strong>Somerset Soccer Club</strong>
       </div>
-      <div className="basis-1/4">
-        <Link to="/about" style={{ textDecoration: "none", height: "100%" }}>
-          About Us
-        </Link>
+      <div className="flex flex-row-reverse basis-1/2">
+        <div>
+          <Link to="/about">About Us</Link>
 
-        <Link to="/rec" style={{ textDecoration: "none", height: "100%" }}>
-          Rec Soccer
-        </Link>
+          <Link to="/rec">Rec Soccer</Link>
 
-        <Link
-          to="/competitive"
-          style={{ textDecoration: "none", height: "100%" }}
-        >
-          Competitive Soccer
-        </Link>
+          <Link to="/competitive">Competitive Soccer</Link>
 
-        <Link to="/faq" style={{ textDecoration: "none", height: "100%" }}>
-          FAQ's
-        </Link>
+          <Link to="/faq">FAQ's</Link>
 
-        <Link to="/register" style={{ textDecoration: "none", height: "100%" }}>
-          Register
-        </Link>
+          <Link to="/register">Register</Link>
+        </div>
       </div>
     </div>
   );
