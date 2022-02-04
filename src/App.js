@@ -1,17 +1,12 @@
 import { Outlet } from "react-router-dom";
-import styled from "styled-components";
 import HeaderComponent from "./components/header-component";
-import "./App.css";
-
-const GrandpaContainer = styled.div``;
 
 const App = () => {
   return (
-    <GrandpaContainer>
+    <div className="md:container md:mx-auto">
       <HeaderComponent />
-
       <Outlet />
-    </GrandpaContainer>
+    </div>
   );
 };
 

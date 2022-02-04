@@ -8,6 +8,7 @@ import Competitive from "./routes/competitive";
 import FAQ from "./routes/faq";
 import Rec from "./routes/rec";
 import Register from "./routes/register";
+import "./index.css";
 
 const rootElement = document.getElementById("root");
 render(

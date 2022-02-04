@@ -1,70 +1,32 @@
 import { Link } from "react-router-dom";
 import sscLogo from "../assets/sscLogo.jpg";
-import styled from "styled-components";
-
-const DaddyContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  gap: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-`;
-
-const MommyContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 3.5em;
-`;
-
-const LinkContainer = styled.button`
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.4em;
-  height: 100%;
-  border: none;
-`;
 
 const HeaderComponent = () => {
   return (
-    <div>
-      <DaddyContainer>
+    <div className="flex flex-row flex-wrap py-6 items-center">
+      <div className="flex items-center basis-1/2">
         <Link to="/">
           <img
             src={sscLogo}
             alt="Somerset Soccer Logo"
-            style={{ height: "108.8px", width: "130.4px" }}
+            // style={{ height: "54.4px", width: "81.5px" }} //reg height and width is 108.8 x 163
           ></img>
         </Link>
-        <h1>Somerset Soccer Club</h1>
-      </DaddyContainer>
-      <MommyContainer>
-        <Link to="/about" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer> About Us </LinkContainer>
-        </Link>
+        <strong>Somerset Soccer Club</strong>
+      </div>
+      <div className="flex flex-row-reverse basis-1/2">
+        <div>
+          <Link to="/about">About Us</Link>
 
-        <Link to="/rec" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>Rec Soccer</LinkContainer>
-        </Link>
+          <Link to="/rec">Rec Soccer</Link>
 
-        <Link
-          to="/competitive"
-          style={{ textDecoration: "none", height: "100%" }}
-        >
-          <LinkContainer>Competitive Soccer</LinkContainer>
-        </Link>
+          <Link to="/competitive">Competitive Soccer</Link>
 
-        <Link to="/faq" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>FAQ's</LinkContainer>
-        </Link>
+          <Link to="/faq">FAQ's</Link>
 
-        <Link to="/register" style={{ textDecoration: "none", height: "100%" }}>
-          <LinkContainer>Register</LinkContainer>
-        </Link>
-      </MommyContainer>
+          <Link to="/register">Register</Link>
+        </div>
+      </div>
     </div>
   );
 };

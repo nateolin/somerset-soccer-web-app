@@ -1,7 +1,5 @@
-import "./main-content.css";
-
 const MainContent = () => {
-  return <div className="backgroundImage"></div>;
+  return <div>Hello Home</div>;
 };
 
 export default MainContent;
