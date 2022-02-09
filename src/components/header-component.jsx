@@ -3,8 +3,8 @@ import sscLogo from "../assets/sscLogo.jpg";
 
 const HeaderComponent = () => {
   return (
-    <div className="mx-auto flex items-center max-w-8xl justify-between">
-      <div className="flex">
+    <div className="px-5vw py-9 lg:py-12">
+      <nav className="mx-auto flex items-center max-w-8xl justify-between">
         <Link className="flex items-center" to="/">
           <img
             src={sscLogo}
@@ -19,48 +19,49 @@ const HeaderComponent = () => {
             </div>
           </div>
         </Link>
-      </div>
-      <div className="flex items-center justify-center">
-        <div className="px-4">
-          <Link to="/about">
-            <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
-              About Us
-            </div>
-          </Link>
-        </div>
-        <div className="px-4">
-          <Link to="/rec">
-            <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
-              Rec Soccer
-            </div>
-          </Link>
-        </div>
-        <div className="px-4">
-          <Link
-            className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
-            to="/competitive"
-          >
-            Competitive Soccer
-          </Link>
-        </div>
-        <div className="px-4">
-          <Link
-            className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
-            to="/faq"
-          >
-            FAQ's
-          </Link>
-        </div>
 
-        <div className="px-4">
-          <Link
-            className="text-slate-600 text-lg hover:text-red-600"
-            to="/register"
-          >
-            Register
-          </Link>
+        <div className="flex items-center justify-center">
+          <div className="px-4">
+            <Link to="/about">
+              <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
+                About Us
+              </div>
+            </Link>
+          </div>
+          <div className="px-4">
+            <Link to="/rec">
+              <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
+                Rec Soccer
+              </div>
+            </Link>
+          </div>
+          <div className="px-4">
+            <Link
+              className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
+              to="/competitive"
+            >
+              Competitive Soccer
+            </Link>
+          </div>
+          <div className="px-4">
+            <Link
+              className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
+              to="/faq"
+            >
+              FAQ's
+            </Link>
+          </div>
+
+          <div className="px-4">
+            <Link
+              className="text-slate-600 text-lg hover:text-red-600"
+              to="/register"
+            >
+              Register
+            </Link>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
