@@ -20,7 +20,12 @@ export default function About() {
             passion for the sport. We will challenge players to develop their
             abilities to a higher level in preparation of entering the high
             school program. You can reach us at{" "}
-            <span>somersetsoccer@gmail.com</span>
+            <a
+              className="text-sky-600 underline"
+              href="mailto:somersetsoccer@gmail.com"
+            >
+              somersetsoccer@gmail.com
+            </a>
           </p>
         </div>
         <div className="pl-8">
@@ -28,7 +33,7 @@ export default function About() {
             className="rounded-lg w-96"
             src={footOnBall}
             alt="foot wearing cleat on soccer ball"
-          ></img>
+          />
         </div>
       </div>
     </div>

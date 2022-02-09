@@ -13,29 +13,29 @@ const HeaderComponent = () => {
             height="100"
           />
 
-          <div className="px-4 text-2xl text-slate-600 ">
+          <div className="px-4 text-2xl text-slate-600">
             <div className="underlined focus:outline-none block whitespace-nowrap font-medium transition ease-in-out hover:text-red-600 duration-200 delay-50">
               Somerset Soccer Club
             </div>
           </div>
         </Link>
 
-        <div className="flex items-center justify-center">
-          <div className="px-4">
+        <div className="flex items-center justify-center font-medium">
+          <div className="px-5">
             <Link to="/about">
               <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
                 About Us
               </div>
             </Link>
           </div>
-          <div className="px-4">
+          <div className="px-5">
             <Link to="/rec">
               <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
                 Rec Soccer
               </div>
             </Link>
           </div>
-          <div className="px-4">
+          <div className="px-5">
             <Link
               className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
               to="/competitive"
@@ -43,7 +43,7 @@ const HeaderComponent = () => {
               Competitive Soccer
             </Link>
           </div>
-          <div className="px-4">
+          <div className="px-5">
             <Link
               className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
               to="/faq"
@@ -52,7 +52,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
 
-          <div className="px-4">
+          <div className="px-5">
             <Link
               className="text-slate-600 text-lg hover:text-red-600"
               to="/register"
