@@ -5,7 +5,9 @@ const App = () => {
   return (
     <div className="md:container md:mx-auto">
       <HeaderComponent />
-      <Outlet />
+      <div className="relative mx-10vw">
+        <Outlet />
+      </div>
     </div>
   );
 };
