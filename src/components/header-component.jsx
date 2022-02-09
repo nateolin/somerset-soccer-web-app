@@ -3,8 +3,8 @@ import sscLogo from "../assets/sscLogo.jpg";
 
 const HeaderComponent = () => {
   return (
-    <div className="flex py-6 items-center">
-      <div className="flex basis-1/2">
+    <div className="mx-auto flex items-center max-w-8xl justify-between">
+      <div className="flex">
         <Link className="flex items-center" to="/">
           <img
             src={sscLogo}
@@ -14,13 +14,13 @@ const HeaderComponent = () => {
           />
 
           <div className="px-4 text-2xl text-slate-600 ">
-            <div className="transition ease-in-out hover:text-red-600 duration-200 delay-50">
+            <div className="underlined focus:outline-none block whitespace-nowrap font-medium transition ease-in-out hover:text-red-600 duration-200 delay-50">
               Somerset Soccer Club
             </div>
           </div>
         </Link>
       </div>
-      <div className="flex  basis-1/2">
+      <div className="flex items-center justify-center">
         <div className="px-4">
           <Link to="/about">
             <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
