@@ -1,13 +1,15 @@
 const FooterComponent = () => {
   return (
-    <footer className="absolute bottom-0 border-t border-gray-200 pb-16 pt-16 inset-x-0">
+    <footer className="relative bottom-0 border-t border-gray-200 pb-16 pt-16 inset-x-0">
       <div className="relative mx-10vw">
         <div className="relative mx-auto grid max-w-7xl grid-cols-4 grid-rows-max-content gap-x-4">
           <div className="col-span-full">
             <div className="text-xl font-medium">
               Somerset Soccer Association
             </div>
-            <p className="mt-6 text-2xl">Insert League Name or Info Here</p>
+            <p className="mt-6 text-2xl text-gray-600">
+              Insert League Name or Info Here
+            </p>
             <div className="mt-6 flex items-center justify-between gap-4">
               <div className="flex gap-4">
                 <button

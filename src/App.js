@@ -9,7 +9,9 @@ const App = () => {
       <div className="relative">
         <Outlet />
       </div>
-      <FooterComponent />
+      <div className="pt-16">
+        <FooterComponent />
+      </div>
     </div>
   );
 };
