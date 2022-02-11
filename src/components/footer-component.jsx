@@ -20,14 +20,14 @@ const FooterComponent = () => {
                     )
                   }
                 >
-                  <i class="fa-brands fa-facebook fa-2xl" />
+                  <i className="fa-brands fa-facebook fa-2xl" />
                 </button>
                 <button
                   onClick={() =>
                     window.open(`https://twitter.com/SomersetSoccer1`, "_blank")
                   }
                 >
-                  <i class="fa-brands fa-twitter fa-2xl" />
+                  <i className="fa-brands fa-twitter fa-2xl" />
                 </button>
                 <button
                   onClick={() =>
@@ -37,7 +37,7 @@ const FooterComponent = () => {
                     )
                   }
                 >
-                  <i class="fa-brands fa-instagram fa-2xl" />
+                  <i className="fa-brands fa-instagram fa-2xl" />
                 </button>
               </div>
             </div>
