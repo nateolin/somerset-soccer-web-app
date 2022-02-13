@@ -41,12 +41,18 @@ const MainContent = () => {
                   Competitive Program
                 </div>
               </a> */}
-              <button className="bg-red-700 hover:bg-red-800 text-white py-2 px-4 rounded font-bold">
+              <a
+                className="bg-red-700 hover:bg-red-800 text-white py-2 px-4 rounded font-bold text-center"
+                href="/rec"
+              >
                 Rec Program
-              </button>
-              <button className="bg-transparent hover:bg-red-800 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded ">
+              </a>
+              <a
+                className="bg-transparent hover:bg-red-800 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded"
+                href="/competitive"
+              >
                 Competitive Program
-              </button>
+              </a>
             </div>
           </div>
         </div>
