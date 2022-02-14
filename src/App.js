@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="md:container md:mx-auto">
       <HeaderComponent />
-      <div className="relative">
+      <div>
         <Outlet />
       </div>
       <div className="pt-16">
