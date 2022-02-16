@@ -19,47 +19,53 @@ const HeaderComponent = () => {
             </div>
           </div>
         </Link>
+        <div className="hidden lg:flex">
+          <div className="flex items-center justify-center font-medium">
+            <div className="px-5">
+              <Link to="/about">
+                <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
+                  About Us
+                </div>
+              </Link>
+            </div>
+            <div className="px-5">
+              <Link to="/rec">
+                <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
+                  Rec Soccer
+                </div>
+              </Link>
+            </div>
+            <div className="px-5">
+              <Link
+                className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
+                to="/competitive"
+              >
+                Competitive Soccer
+              </Link>
+            </div>
+            <div className="px-5">
+              <Link
+                className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
+                to="/faq"
+              >
+                FAQ's
+              </Link>
+            </div>
 
-        <div className="flex items-center justify-center font-medium">
-          <div className="px-5">
-            <Link to="/about">
-              <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
-                About Us
-              </div>
-            </Link>
+            <div className="px-5">
+              <Link
+                className="text-slate-600 text-lg hover:text-red-600"
+                to="/register"
+              >
+                Register
+              </Link>
+            </div>
           </div>
-          <div className="px-5">
-            <Link to="/rec">
-              <div className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50">
-                Rec Soccer
-              </div>
-            </Link>
-          </div>
-          <div className="px-5">
-            <Link
-              className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
-              to="/competitive"
-            >
-              Competitive Soccer
-            </Link>
-          </div>
-          <div className="px-5">
-            <Link
-              className="text-slate-600 text-lg hover:text-red-600 duration-200 delay-50"
-              to="/faq"
-            >
-              FAQ's
-            </Link>
-          </div>
-
-          <div className="px-5">
-            <Link
-              className="text-slate-600 text-lg hover:text-red-600"
-              to="/register"
-            >
-              Register
-            </Link>
-          </div>
+        </div>
+        <div className="block lg:hidden">
+          <button className="focus:border-primary hover:border-primary focus:outline-none inline-flex h-14 w-14 items-center justify-center rounded-full border-2 p-1 transition">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
     </div>
