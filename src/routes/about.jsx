@@ -3,7 +3,7 @@ import footOnBall from "../assets/background-pic-foot-on-ball.jpg";
 export default function About() {
   return (
     <div className="relative mx-10vw">
-      <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-10 lg:gap-x-4 mx-auto max-w-7xl lg: mb-12 h-auto pt-24 lg:min-h-[40rem]">
+      <div className="relative grid gap-x-4 md:grid-cols-8 lg:grid-cols-10 lg:gap-x-4 mx-auto max-w-7xl lg: mb-12 h-auto pt-24 lg:min-h-[40rem]">
         <div className="col-span-full lg:-mt-12 lg:col-start-1 lg:row-start-1 lg:flex lg:h-full lg:flex-col lg:col-span-5">
           <div className="flex flex-auto flex-col" style={{ opacity: 1 }}>
             <div style={{ opacity: 1, transform: "none" }}>
